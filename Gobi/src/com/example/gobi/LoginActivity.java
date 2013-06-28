@@ -1,6 +1,7 @@
 package com.example.gobi;
 
 import java.io.UnsupportedEncodingException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +24,9 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
 
 public class LoginActivity extends Activity {
 

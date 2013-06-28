@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gobi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_task_list_view">TaskListViewActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_activity_tracking">ActivityTrackingActivity</string>
+    <string name="title_activity_side_bar_menu">SideBarMenuActivity</string>
+    <string name="title_activity_tasks_in_focus">TasksInFocusActivity</string>
+    <string name="title_activity_timeline_view">TimelineViewActivity</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+    <string name="title_activity_organise">OrganiseActivity</string>
+    <string name="title_activity_assign_task">AssignTaskActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_due_date">DueDateActivity</string>
+    <string name="title_activity_add_task">AddTaskActivity</string>
+    <string name="title_activity_add_checklist">AddChecklistActivity</string>
+    <string name="title_activity_add_project">AddProjectActivity</string>
+    <string name="title_activity_edit_task">EditTaskActivity</string>
+    <string name="title_activity_edit_checklist">EditChecklistActivity</string>
+    <string name="title_activity_edit_project">EditProjectActivity</string>
+    <string name="title_activity_completed_task">CompletedTaskActivity</string>
+    <string name="title_activity_project_view">ProjectViewActivity</string>
+    <string name="title_activity_add_task_in_project">AddTaskInProjectActivity</string>
+    <string name="title_activity_edit_task_in_project">EditTaskInProjectActivity</string>
+
+    <!-- Log In & Register Strings -->
+    <string name="userPassword">Enter password</string>
+    <string name="confirmUserPassword">Confirm password</string>
+    <string name="userEmail">Enter email</string>
+    <string name="userName">Enter username</string>
+    <string name="emailPassword">Email password</string>
+    <string name="help_title">Help</string>
+    <string name="keyword_title">Keywords</string>
+    <string name="register">Register</string>
+    <string name="logout">Log out</string>
+    <string name="sync">Sync</string>
+
+    <!-- Task-List View strings -->
+    <string name="workspace_title">PERSONAL</string>
+    <string name="checklist_title">CHECKLIST</string>
+    <string name="project_title">PROJECT</string>
+
+    <!-- Task details placeholder strings -->
+    <string name="task_name">Task Name</string>
+    <string name="today_top">TO</string>
+    <string name="today_bottom">DAY</string>
+    <string name="date_num">31</string>
+    <string name="date_month">AUG</string>
+    <string name="title_activity_checklist_view">ChecklistViewActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gesture">GestureActivity</string>
+
+    <!-- Add/Edit task strings -->
+    <string name="desc_plusButton">Plus button image used to add items</string>
+    <string name="create_todo">To Do</string>
+    <string name="create_checklist">Checklist</string>
+    <string name="create_project">Project</string>
+    <string name="create_important">Important</string>
+    <string name="notes">Notes</string>
+    <string name="edit_done">Done</string>
+    <string name="title_activity_cloud_sample">CloudSample</string>
+    <string name="task_name_hint">Please enter text</string>
+
+    <!-- Due Date & Location strings -->
+    <string name="date_header">Date</string>
+    <string name="time_header">Time</string>
+    <string name="alarm_prompt">Alarm</string>
+
+    <string-array name="alarm_arrays">
+        <item>Off</item>
+        <item>At time of event</item>
+        <item>5 minutes before</item>
+        <item>10 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+    </string-array>
+
+    <string name="location_prompt">Location</string>
+
+    <string-array name="location_arrays">
+        <item>Home</item>
+        <item>GP South</item>
+        <item>UQ</item>
+        <item>City</item>
+    </string-array>
+    <string-array name="event_arrays">
+        <item>Presentation Day!</item>
+        <item>DECO3850 Report Due</item>
+    </string-array>
+
+    <!-- Bread Crumbs strings -->
+    <string name="checklistWorkspace">C.Workspace</string>
+    <string name="projectWorkspace">P.Workspace</string>
+    <string name="checklistProject">C.Project</string>
+    <string name="create_todo_in_project">To Do &#10;In Project</string>
+
+    <!-- Edit Task Titles to be used for Task Info Headers -->
+    <string name="duedate_title_taskinfo">Due Date</string>
+    <string name="assign_title_taskinfo">Assign</string>
+    <string name="organise_title_taskinfo">Organise</string>
+    <string name="note_title_taskinfo">Notes</string>
+
+    <!-- Date Month Strings for TaskListViewActivity -->
+
+    <string name="jan">JAN</string>
+    <string name="feb">FEB</string>
+    <string name="mar">MAR</string>
+    <string name="apr">APR</string>
+    <string name="may">MAY</string>
+    <string name="jun">JUN</string>
+    <string name="jul">JUL</string>
+    <string name="aug">AUG</string>
+    <string name="sep">SEP</string>
+    <string name="oct">OCT</string>
+    <string name="nov">NOV</string>
+    <string name="dec">DEC</string>
+
+    <!-- Completed Task Strings -->
+    <string name="Completed_Task_Title">Completed Tasks</string>
+
+    <!-- Miscellaneous -->
+    <color name="grey">#888888</color>
+    <color name="white">#FFFFFF</color>
+
+    <string name="title_activity_tab_task_list">TabTaskList</string>
+    <string name="title_activity_tab_check_list">TabCheckList</string>
+    <string name="title_activity_tab_project_list">TabProjectList</string>
+    <string name="title_activity_tabhost_layout">TabhostLayoutActivity</string>
+    <string name="title_activity_tasktype_tabs_fragments">TasktypeTabsFragments</string>
+    <string name="title_activity_task_list_fragment">TaskListFragment</string>
+    <string name="title_activity_project_list_fragment">ProjectListFragment</string>
+    <string name="title_activity_edit_checklist_item">EditChecklistItemActivity</string>
+
+    <string name="checklist_item_hint">Please add text here</string>
+    <string name="note_text_hint">Please enter some text here.</string>
+    
+</resources>

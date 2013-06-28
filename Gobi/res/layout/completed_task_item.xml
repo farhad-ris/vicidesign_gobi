@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/taskItemLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp" 
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+        <ImageView
+            android:id="@+id/taskIconCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:src="@drawable/ic_launcher" />
+        <!-- android:src shouldn't be specified here, but rather in TaskListViewActivity
+        because it needs to be dynamically generated. For now, it's okay. -->
+
+        <TextView
+            android:id="@+id/taskNameCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:text="@string/task_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center" />
+<!-- android:text shouldn't be specified here, but rather in TaskListViewActivity
+        because it needs to be dynamically generated. For now, it's okay. -->
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/taskDateTopCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_num"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+            <!-- android:text shouldn't be specified here, but rather in TaskListViewActivity
+        because it needs to be dynamically generated. For now, it's okay. -->
+
+            <TextView
+                android:id="@+id/taskDateBottomCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_month"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+  
+            <!-- android:text shouldn't be specified here, but rather in TaskListViewActivity
+        because it needs to be dynamically generated. For now, it's okay. -->
+        </LinearLayout>
+</LinearLayout>

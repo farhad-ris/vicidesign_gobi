@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- ########################################### -->
+    <!-- ##############  TOP MENU  ################# -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/helpIcon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_tab_complete"
+            android:scaleType="centerCrop"
+             />
+        
+        <TextView
+            android:id="@+id/CompletedTaskTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:text="@string/Completed_Task_Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+             />
+
+        
+       
+
+    </LinearLayout>
+    
+	<!-- ########################################### -->
+    <!-- ##############  TASKS LIST  ############### -->
+    <!-- ########################################### -->
+    
+    <ListView 
+        android:id="@+id/ListViewCompletedTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+    </ListView>
+    
+    
+    <!-- <LinearLayout
+        android:id="@+id/task"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp" 
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+        <ImageView
+            android:id="@+id/taskIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:text="@string/task_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/taskDateTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_num"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/taskDateBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_month"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+  
+        </LinearLayout>
+  
+    </LinearLayout>
+    
+    SIMPLE HORIZONTAL LINE DIVIDER USING <View>
+    <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@android:color/darker_gray" /> 
+    
+    
+    <LinearLayout
+        android:id="@id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+        <ImageView
+            android:id="@id/taskIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@id/taskName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:text="@string/task_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/taskDateTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_top"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@id/taskDateBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_bottom"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+    </LinearLayout>
+ -->
+</LinearLayout>

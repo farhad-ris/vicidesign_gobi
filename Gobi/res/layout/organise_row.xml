@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/organise_row"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+     >
+     
+    <TextView android:id="@+id/organise_workspace"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        
+		android:layout_weight="0"        
+        android:text="Workspace 1"
+        android:background="@drawable/border_left"
+        android:padding="8dp"
+        
+        />
+    
+    <TextView android:id="@+id/organise_project"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        
+        android:layout_weight="0"
+        android:gravity="left"
+        android:text="Project 1"
+        android:background="@drawable/border_left"
+        android:padding="8dp"
+        
+        />
+    
+
+</LinearLayout>

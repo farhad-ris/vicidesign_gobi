@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <!-- ##############  SIDEBAR MENU FRAGMENT PLACEHOLDER  ### -->
+
+        <FrameLayout
+            android:id="@+id/sidebarMenuFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/tasklistLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/workspaceFragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- ##############  WORKSPACE MENU BUTTON ############# -->
+
+                <LinearLayout
+                    android:id="@+id/workspaceMenuButtonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/workspaceMenuButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_action_workspace" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout> <!-- END OF WORKSPACE MENU BUTTON -->
+            </LinearLayout> <!-- END OF WORKSPACE FRAGMENT PLACEHOLDER -->
+
+
+            <!--
+                 <fragment android:id="@+id/fragment_workspaceMenu"
+        			android:layout_width="match_parent"
+        			android:layout_height="120dp"
+        			class="com.example.gobi.WorkspaceMenuFragment" />
+            -->
+
+
+            <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/sidebarMenuPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+        </LinearLayout>
+            -->
+            <!-- ##############  TASKLIST VIEW  ################# -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <!-- ##############  TOP MENU  ################# -->
+
+                <LinearLayout
+                    android:id="@+id/top_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/workspaceIcon"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_personal" />
+
+                    <TextView
+                        android:id="@+id/workspaceTitle"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:text="@string/workspace_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="30sp" />
+
+                    <!-- To set background transparent: android:background="@null" -->
+
+                    <ImageButton
+                        android:id="@+id/addTaskButton"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_task_normal" />
+                </LinearLayout>
+
+                <!-- ##############  TASKS LISTVIEW  ############### -->
+
+                <ListView
+                    android:id="@+id/ListViewTaskList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <!-- ##############  CHECKLIST LISTVIEW  ############### -->
+
+                <ListView
+                    android:id="@+id/ListViewChecklistList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <!-- ##############  PROJECT LISTVIEW  ############### -->
+
+                <ListView
+                    android:id="@+id/ListViewProjectList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ##############  WORKSPACE FRAGMENT PLACEHOLDER  ### -->
+
+    </LinearLayout>
+
+</ScrollView><!--
+    <LinearLayout
+        android:id="@+id/task"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp" 
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+        <ImageView
+            android:id="@+id/taskIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:text="@string/task_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/taskDateTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_num"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/taskDateBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_month"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+  
+        </LinearLayout>
+  
+    </LinearLayout>
+    
+    SIMPLE HORIZONTAL LINE DIVIDER USING <View>
+    <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@android:color/darker_gray" /> 
+    
+    
+    <LinearLayout
+        android:id="@id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+        <ImageView
+            android:id="@id/taskIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@id/taskName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:text="@string/task_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/taskDateTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_top"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@id/taskDateBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_bottom"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+    </LinearLayout>
+-->

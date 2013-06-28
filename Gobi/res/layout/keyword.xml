@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".KeywordActivity" >
+    
+    <LinearLayout android:id="@+id/workspaceFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+    </LinearLayout>
+        
+        
+<!--     <fragment android:id="@+id/fragment_workspaceMenu"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        class="com.example.gobi.WorkspaceMenuFragment"
+        /> -->
+
+    <!-- ########################################### -->
+    <!-- ##############  TOP MENU  ################# -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/keywordIcon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_action_keyword"
+            android:scaleType="centerCrop"
+             />
+        
+        <TextView
+            android:id="@+id/keywordTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:text="@string/keyword_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+             />
+
+    </LinearLayout>
+    
+	<!-- ########################################### -->
+    <!-- #############  HELP CONTENT  ############## -->
+    <!-- ########################################### -->
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="20dp"
+    	android:paddingTop="1dp">
+        
+   <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            android:text="Keywords are picked up by Gobi to set up an icon to the task that you have created. Below are some of the keywords you can use:"
+            android:textSize="13sp"
+            />
+ 
+   </LinearLayout>
+   
+   <RelativeLayout 
+        android:id="@+id/browse"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="1dp"
+       >
+   
+        <ImageView 
+            android:id="@+id/browse"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_browse"
+            android:paddingBottom="20dp" />
+        
+        <TextView
+            android:layout_toRightOf="@id/browse"
+            android:layout_alignTop="@id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="Browse/Search"
+            android:textSize="15sp"
+            />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+        android:id="@+id/call"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="1dp"
+       >
+   
+        <ImageView 
+            android:id="@+id/call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_call"
+            android:paddingBottom="20dp" />
+        
+        <TextView
+            android:layout_toRightOf="@id/call"
+            android:layout_alignTop="@id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="Call/Ring/Telephone"
+            android:textSize="15sp"
+            />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+        android:id="@+id/checklist"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="1dp"
+       >
+   
+        <ImageView 
+            android:id="@+id/checklist"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_checklist"
+            android:paddingBottom="20dp" />
+        
+        <TextView
+            android:layout_toRightOf="@id/checklist"
+            android:layout_alignTop="@id/checklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="Checklist"
+            android:textSize="15sp"
+            />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout 
+        android:id="@+id/email"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="1dp"
+       >
+   
+        <ImageView 
+            android:id="@+id/email"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_email"
+            android:paddingBottom="20dp" />
+        
+        <TextView
+            android:layout_toRightOf="@id/email"
+            android:layout_alignTop="@id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="Email"
+            android:textSize="15sp"
+            />
+        
+        </RelativeLayout>
+   
+   
+</LinearLayout>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ProjectViewActivity" >
+    
+    <LinearLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+     >
+
+    <!-- ########################################### -->
+    <!-- ##############  TOP MENU  ################# -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/projectIcon"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_create_project"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/projectTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:text="@string/project_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <!-- To set background transparent: android:background="@null" -->
+        <ImageButton
+            android:id="@+id/projectItemButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_task_normal" 
+            />"
+
+    </LinearLayout>
+    
+    <!-- ########################################### -->
+    <!-- #############  BREAD CRUMBS  ############## -->
+    <!-- ########################################### -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        
+        <Space 
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.13"
+            />
+        
+    <TextView
+            android:id="@+id/projectWorkspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/projectWorkspace"
+       		android:textColor="#C0C0C0" />
+    
+    <Space 
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+    
+               <fragment android:id="@+id/tabsFragments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                class="com.example.gobi.ProjectTabsFragment"
+                />
+      
+           </LinearLayout>
+           
+    
+    </LinearLayout>
+ 
+    
+           <!-- ##############  TASKS LISTVIEW  ############### -->
+<!-- 
+           <ListView
+               android:id="@+id/ListViewTaskList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+           </ListView>-->
+
+           <!-- ##############  CHECKLIST LISTVIEW  ############### -->
+
+           <!-- <ListView
+               android:id="@+id/ListViewChecklistList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+           </ListView> -->
+           
+
+    </LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gobi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_gobi_launcher_thick"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <provider
+            android:name="com.example.gobi.GobiContentProvider"
+            android:authorities="com.example.gobi.GobiContentProvider"
+            android:exported="false"
+            android:multiprocess="true" >
+        </provider>
+
+        <receiver android:name="com.example.gobi.Alarm" >
+        </receiver>
+
+        <activity
+            android:name="com.example.gobi.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TaskListViewActivity"
+            android:label="@string/title_activity_task_list_view"
+            android:screenOrientation="portrait" >
+            
+            
+        </activity>
+        <activity
+            android:name="com.example.gobi.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.ActivityTrackingActivity"
+            android:label="@string/title_activity_activity_tracking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.SideBarMenuActivity"
+            android:label="@string/title_activity_side_bar_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TasksInFocusActivity"
+            android:label="@string/title_activity_tasks_in_focus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TimelineViewActivity"
+            android:label="@string/title_activity_timeline_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.NotesActivity"
+            android:label="@string/title_activity_comments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.OrganiseActivity"
+            android:label="@string/title_activity_organise"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AssignTaskActivity"
+            android:label="@string/title_activity_assign_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.DueDateActivity"
+            android:label="@string/title_activity_due_date"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AddTaskActivity"
+            android:label="@string/title_activity_add_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AddChecklistItemActivity"
+            android:label="@string/title_activity_add_checklist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AddProjectActivity"
+            android:label="@string/title_activity_add_project"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.EditTaskActivity"
+            android:label="@string/title_activity_edit_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.EditChecklistActivity"
+            android:label="@string/title_activity_edit_checklist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.EditProjectActivity"
+            android:label="@string/title_activity_edit_project"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.ChecklistViewActivity"
+            android:label="@string/title_activity_checklist_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.SplashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.example.gobi.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.gobi.TodayViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.WorkspaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.AddWorkspaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.EditWorkspaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.InboxActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.ShareProjectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.ShareChecklistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.GeolocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.AudioclipsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.PhotosActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.gobi.TagsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.GestureActivity"
+            android:label="@string/title_activity_gesture"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.CompletedTaskActivity"
+            android:label="@string/title_activity_completed_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.ProjectViewActivity"
+            android:label="@string/title_activity_project_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.AddTaskInProjectActivity"
+            android:label="@string/title_activity_add_task_in_project"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.EditTaskInProjectActivity"
+            android:label="@string/title_activity_edit_task_in_project"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TabTaskList"
+            android:label="@string/title_activity_tab_task_list"
+            android:screenOrientation="portrait" >
+            
+
+  
+
+        </activity>
+        <activity
+            android:name="com.example.gobi.TabCheckList"
+            android:label="@string/title_activity_tab_check_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TabProjectList"
+            android:label="@string/title_activity_tab_project_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.TabhostLayoutActivity"
+
+            android:label="Gobi"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.example.gobi.TasktypeTabsFragments"
+            android:label="@string/title_activity_tasktype_tabs_fragments"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+       <activity android:name="com.example.gobi.TaskListFragment"
+            android:label="@string/title_activity_task_list_fragment"
+            android:screenOrientation="portrait" >
+            </activity>
+        <activity
+            android:name="com.example.gobi.ProjectListFragment"
+            android:label="@string/title_activity_project_list_fragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gobi.EditChecklistItemActivity"
+            android:label="@string/title_activity_edit_checklist_item"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

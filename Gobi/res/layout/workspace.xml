@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workspaceMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/sidebar_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    android:orientation="horizontal"
+    tools:context=".WorkspaceMenuFragment" >
+
+    <Button
+        android:id="@+id/workspaceMenuIcon_Personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/ic_action_workspace_icon3"
+        android:gravity="center"
+        android:text="Personal"
+        android:textColor="#999" />
+
+    <Button
+        android:id="@+id/workspaceMenuIcon_Work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/ic_action_workspace_icon9"
+        android:gravity="center"
+        android:text="Work"
+        android:textColor="#999" />
+
+    <Button
+        android:id="@+id/workspaceMenuIcon_Uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/ic_action_workspace_icon1"
+        android:gravity="center"
+        android:text="Uni"
+        android:textColor="#999" />
+    
+     <Button
+         android:id="@+id/workspaceMenuIcon_Play"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:background="@null"
+         android:drawablePadding="5dp"
+         android:drawableTop="@drawable/ic_action_workspace_icon5"
+         android:gravity="center"
+         android:text="Play"
+         android:textColor="#999" />
+    
+    <!-- <ImageView android:id="@+id/addWorkspace"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_add_task_normal"
+        android:scaleType="centerCrop"
+        
+        /> -->
+<!-- comment! -->
+</LinearLayout>

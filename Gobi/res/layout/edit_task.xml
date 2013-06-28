@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditTaskActivity" >
+
+    <!-- ########################################### -->
+    <!-- # ADD TASK TEXT FIELD AND ADD TASK BUTTON # -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/task_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <EditText
+            android:id="@+id/editTaskText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="140"
+            android:hint="@+string/task_name_hint"/>
+
+        <ImageButton
+            android:id="@+id/confirmEditTaskButton"
+            android:layout_width="45dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_edit_done" />
+    </LinearLayout>
+
+    <!-- ########################################### -->
+    <!-- ##############  TASK TYPES  ############### -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/task_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/create_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_create_todo"
+            android:gravity="center"
+            android:text="@string/create_todo"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/create_checklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_create_checklist"
+            android:gravity="center"
+            android:text="@string/create_checklist"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/create_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_create_project"
+            android:gravity="center"
+            android:text="@string/create_project"
+            android:textSize="13sp" />
+
+        <!-- ############## EMPTY SPACER ############### -->
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_action_important"
+            android:text="@string/create_important"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- ############## EMPTY SPACER ############### -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- ########################################### -->
+    <!-- ##############  TASK INFO   ############### -->
+    <!-- ########################################### -->
+
+    <include
+        android:id="@+id/taskinfo_grid"
+        layout="@layout/incl_taskinfo_grid" />
+
+    <!-- ############## EMPTY SPACER ############### -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

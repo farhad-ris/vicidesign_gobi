@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sidebar_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddWorkspaceActivity" >
+    
+
+    <!-- ########################################### -->
+    <!-- ##############  TOP MENU  ################# -->
+    <!-- ########################################### -->
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/shareWorkspaceIcon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_action_workspace_icon"
+            android:scaleType="centerCrop"
+             />
+
+        <EditText
+            android:id="@+id/WorkspaceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+          	android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:text="Workspace"
+            android:textSize="25sp" 
+            android:textColor="#fff"/>
+        	
+
+        <!-- To set background transparent: android:background="@null" -->
+        <ImageButton
+            android:id="@+id/addWorkspaceButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_task_normal" 
+            />
+
+    </LinearLayout>
+
+        <Button 
+            android:id="@+id/shareWorkspace_button"
+            android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		
+       		android:background="@null"
+       		android:drawablePadding="5dp"
+       		android:drawableLeft="@drawable/ic_tab_assign_light"
+       		android:text="Share this workspace"
+       		android:textColor="#fff"
+       		   /> 
+    
+       	<!-- <Space android:layout_height="wrap_content"
+       	    android:layout_width="match_parent"
+       	    android:layout_weight="1" /> -->
+      
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select an icon for your workspace"
+            android:textColor="#999"
+            android:layout_marginTop="30dp"
+            />
+       		   
+       <GridLayout android:id="@+id/workspace_iconGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            >
+        
+           <!-- ROW 0 -->
+            <ImageButton
+            android:id="@+id/workspace_icon1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon1" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon2"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon2" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon3"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon3" 
+            />
+            
+            <!-- ROW 1 -->
+            <ImageButton
+            android:id="@+id/workspace_icon4"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon4" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon5"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon5" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon6"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon6" 
+            />
+            
+            <!-- ROW 2 -->
+            <ImageButton
+            android:id="@+id/workspace_icon7"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon7" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon8"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon8" 
+            />
+
+            <ImageButton
+            android:id="@+id/workspace_icon9"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@null" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_workspace_icon9" 
+            />
+            
+            
+                
+            
+        </GridLayout>
+       		
+
+        
+
+</LinearLayout>

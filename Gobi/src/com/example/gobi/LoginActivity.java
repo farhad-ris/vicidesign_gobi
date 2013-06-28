@@ -27,6 +27,7 @@ import android.widget.EditText;
 
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
+import com.parse.ParseObject;
 
 public class LoginActivity extends Activity {
 
@@ -67,7 +68,8 @@ public class LoginActivity extends Activity {
 
 				}
 			});
-
+			//Parse test
+			
 			//--------------------------LOGIN----------------------------------
 
 			userEmail = (EditText) findViewById(R.id.userEmail);
@@ -108,7 +110,14 @@ public class LoginActivity extends Activity {
 			});
 		}
 	}
-
+	public void onCreate() { 
+	    Parse.initialize(this, "gRSb7YFqM8ZlH6EHueaUPoahtFqI34pCAGKvPiFL", "BSO7hZF7bJkU9DvABLSbaWW1PMBzEybEIFN3xyNa");
+	    ParseAnalytics.trackAppOpened(getIntent());
+	    ParseObject testObject = new ParseObject("TestObject");
+		testObject.put("foo", "bar");
+		testObject.saveInBackground();
+	}
+	
 	@Override
 	public void onBackPressed(){
 	}

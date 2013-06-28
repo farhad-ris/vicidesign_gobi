@@ -45,7 +45,16 @@ public class LoginActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-
+		
+		//parse
+		Parse.initialize(this, "gRSb7YFqM8ZlH6EHueaUPoahtFqI34pCAGKvPiFL", "BSO7hZF7bJkU9DvABLSbaWW1PMBzEybEIFN3xyNa");
+	    ParseAnalytics.trackAppOpened(getIntent());
+	    ParseObject testObject = new ParseObject("TestObject");
+		testObject.put("foo", "Nurmerey123");
+		testObject.saveInBackground();
+		
+		
+		//end
 		pref = getApplicationContext().getSharedPreferences("login_status", MODE_PRIVATE);
 		boolean loggedIn = pref.getBoolean("loggedIn", false);
 		if (loggedIn) {
